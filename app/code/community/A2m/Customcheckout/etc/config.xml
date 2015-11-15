@@ -1,0 +1,42 @@
+<config>
+    <modules>
+        <A2m_Customcheckout>
+            <version>0.1.0</version>
+        </A2m_Customcheckout>
+    </modules>
+    <global>
+        <blocks>
+            <a2m_customcheckout>
+                <class>A2m_Customcheckout_Block</class>
+            </a2m_customcheckout>
+        </blocks>
+        <helpers>
+            <a2m_customcheckout>
+                <class>A2m_Customcheckout_Helper</class>
+            </a2m_customcheckout>
+        </helpers>
+        <models>
+            <a2m_customcheckout>
+                <class>A2m_Customcheckout_Model</class>
+            </a2m_customcheckout>
+        </models>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <a2m_customcheckout module="A2m_Customheckout">
+                    <file>customcheckout/onestepcheckout.xml</file>
+                </a2m_customcheckout>
+            </updates>
+        </layout>
+    </frontend>
+
+
+    <default>
+        <checkout>
+            <options>
+                <custom_checkout_enabled>0</custom_checkout_enabled>
+            </options>
+        </checkout>
+    </default>
+</config>
